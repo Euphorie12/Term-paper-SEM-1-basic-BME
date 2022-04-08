@@ -1,0 +1,26 @@
+\documentclass[a4paper, 12pt, oneside]{Front Page}  
+\graphicspath{{Figures/}} 
+\usepackage[square, numbers, comma, sort&compress]{natbib}  
+\usepackage{background}
+\usepackage{lipsum}
+\usetikzlibrary{calc}
+
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{green} %For color definitions go to: https://en.wikibooks.org/wiki/LaTeX/Colors 
+\SetBgContents{
+	\begin{tikzpicture}[overlay,remember picture]
+	\draw [line width=4pt,rounded corners=15pt,double]
+	($ (current page.north west) + (4.4cm,1.4cm) $)
+	rectangle
+	($ (current page.south east) + (1.5cm,3.8cm) $);
+	\end{tikzpicture}
+}
+
+\begin{document}
+
+\frontmatter	 
+\title {\HUGE \bf{Term Paper}\linebreak }
+\maketitle
+
+\end{document}  

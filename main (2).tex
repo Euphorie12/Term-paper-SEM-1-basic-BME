@@ -1,0 +1,243 @@
+\documentclass[15pt]{article}
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+
+
+\usepackage{hyperref}
+\hypersetup{colorlinks = true,citecolor = blue, linkcolor = blue, urlcolor = blue}
+
+\setlength{\columnsep}{1.5cm}
+\setlength{\columnseprule}{1pt}
+ 
+ \usepackage{natbib}
+ 
+\usepackage{enumitem} 
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{verbatim}
+
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\lhead{The future of Digital Therapeutics}
+\rhead{Term paper}
+
+\renewcommand{\headrulewidth}{0.5pt}
+\rfoot{Page \thepage}
+\fancyfoot[C,C]{Harshit Dhaduk}
+\fancyfoot[L,L]{2-April-2022}
+\renewcommand{\footrulewidth}{0.3pt} 
+
+\begin{document}
+
+\pagestyle{fancy}
+\tableofcontents
+\vspace{2cm}
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+\keywords {Digital Therapeutics, future of healthcare, technologies in medicine, digital health} \vspace{2cm}
+ 
+
+
+\newlist{abbrv}{itemize}{1}
+\setlist[abbrv,1]{label=,labelwidth=1in,align=parleft,itemsep=0.1\baselineskip,leftmargin=!}
+
+\begin{center}
+    \textbf{LIST OF ABBREVIATIONS} \vspace{0.5cm}
+\begin{abbrv}
+
+\item[DTx]			Digital Therapeutics
+\item[AI]			Artificial Intelligence
+\item[ADHD]			Attention Deficit Hyperactivity Disorder
+\item[FDA]			Food and Drug Administration
+\item[SaMD]			Software as a Medical Device
+\item[MMA]			Mobile Medical Application 
+\item[NLP]			Natural Language Processing
+\item[ML]			Machine Learning
+
+\end{abbrv}
+\end{center}
+
+
+\pagebreak
+
+\section*{Acknowledgement} \vspace{0.5cm}
+I would like to take this incentive to convey gratitude and special thanks to my project guide Dr. Saurabh Gupta, my Basic Biomedical Engineering teacher, for providing me with the amazing chance to do this project on the topic The Future of Digital Therapeutics, which also assisted me in doing a great deal of research and learning about so many new things.\\
+
+I'm very grateful to all my teachers,Dr. Arindham Bit, Mrs. Neelamshobha Nirala,Dr. Sumit Kumar Banchhor, and Dr. Saurabh Gupta to help me achieve a good amount of knowledge through the research.\\
+
+I'm doing this project not only for the grades, but also to expand my knowledge.\linebreak \linebreak \linebreak \linebreak \linebreak \linebreak \linebreak \linebreak \linebreak \linebreak \linebreak \linebreak \linebreak \linebreak \linebreak  
+
+
+\begin{flushright}
+  Harshit Dhaduk \\
+  21111023 \\
+  1st Sem, BME \\ 
+  National Institute of Technology, Raipur \\ 
+\end{flushright} 
+
+\vspace{1cm}
+Date of Submission: 8th April, 2022
+\pagebreak 
+
+\rule{\textwidth}{0.5pt}
+\begin{abstract}
+Digital therapeutics (DTx) are a digital health category defined by 
+the Digital Therapeutics Alliance as products that “deliver 
+evidence-based therapeutic interventions to patients that are driven
+by high quality software programs to prevent, manage, or treat a 
+medical disorder or disease.” DTx are distinct from digital medicines
+or “smart pills,” which combine a prescription medication with an 
+ingestible sensor that is designed to communicate with a software 
+application to track compliance.Advances in and the increasingly 
+dominant role of mobile technology and artificial intelligence (AI) 
+in our everyday lives have broadened the role of DTx in healthcare. 
+Although, historically, interest in developing DTx was mainly 
+confined to academia and technology companies, the potential to use 
+DTx in conjunction with medicines to improve health outcomes has 
+sparked the interest of big pharma, who have started to venture into 
+the DTx space through investments and strategic partnerships with 
+tech companies. This exciting advancement will create opportunities 
+to increase patients’ awareness of their health and their ability to play a more active role in managing their disease, thereby creating the potential to improve health outcomes and reduce the demands on healthcare systems compared to traditional pharmacological interventions alone.
+\end{abstract}
+\rule{\textwidth}{0.5pt}
+ 
+
+\section{Introduction}
+Digital therapeutics (DTx) are high-quality software systems that 
+help patients cope with various medical conditions and illnesses 
+through health-related tips, behavior recommendations, exercise 
+plans, meds intake alerts, etc. Not unlike drugs, DTx products 
+provide clinically proven results that impact a condition. This is 
+what separates DTx from a bunch of other wellness apps and medication
+reminders. There’s a wide array of disorders and diseases DTx 
+products cover, including obesity, ADHD (attention deficit 
+hyperactivity disorder), type 2 diabetes, anxiety, depression, 
+congestive heart failure, and many more. \\
+
+The Digital Therapeutics Alliance defines digital therapeutics as a 
+new digital health category that “delivers medical interventions 
+directly to patients using evidence-based, clinically evaluated 
+software to treat, manage, and prevent a broad spectrum of diseases 
+and disorders.” \\
+
+So, digital therapeutics may function as
+
+\begin{itemize}
+\item a set of preventative care activities for patients at increased risk 
+of chronic or severe diseases, e.g., weight control and exercise tips
+for people at risk of developing diabetes;
+\item sources of health information for making diagnosis and treatment 
+decisions, e.g., daily reports submitted by patients suffering from 
+depression;
+\item standalone treatments or those coupled with traditional therapies 
+(in-person and/or pharmacological), e.g., digital programs for 
+smoking cessation; and
+\item tools for monitoring and tracking symptoms aiming to continually 
+improve treatment programs and health conditions, e.g., blood 
+pressure control of patients with hypertension.
+\end{itemize}
+
+Many digital therapeutics make use of artificial intelligence (AI), 
+machine learning (ML), and natural language processing (NLP) 
+technologies to deal with patient data.
+
+\section{Potential benefits of digital therapeutics}
+Though a relatively new concept, digital therapeutics promise tons of advantages for physicians, care providers, patients, distributors, and other stakeholders.\\
+
+\textbf{Patients} receive personalized care and treatment programs, can access care from remote areas, and increase treatment effectiveness through better adherence to therapy.\\
+
+\textbf{Healthcare providers} get opportunities to monitor patients in real-time, make timely interventions, improve the efficiency of care delivery, and reduce the need for personal visits by managing people with chronic conditions remotely.\\
+
+\textbf{Distributors} are given a chance to keep track of the demand for different drugs regionally and nation-wide, check the usefulness of the drugs, and manage the supply chain more effectively.\\
+
+\textbf{Payers} can reduce the costs related to care activities, increase sales, and improve patient experience and health outcomes.\\
+
+Digital therapeutics bring innovations capable of filling in the gaps in the traditional medicine market and enhancing healthcare delivery in many areas. In the long run, DTx products have the potential to enhance the existing healthcare system significantly.\\
+
+
+\section{Digital therapeutics key principles}
+According to the above-mentioned DTx Alliance, in order to be called digital therapeutics, products must follow a set of principles, namely to:
+
+\begin{itemize}
+\item prevent, manage, or treat medical disorders or diseases, defined by ICD-10 codes for diagnoses;
+\item produce a software-driven medical intervention;
+\item use best practices for product design, creation, deployment, management, and maintenance;
+\item involve end-users in the processes of product development and testing;
+\item incorporate patient privacy and security protections;
+\item be validated by appropriate regulatory bodies;
+\item be published in peer-reviewed journals with trial results and clinically proven outcomes;
+\item make claims compliant with clinical evaluation and regulatory status; and
+\item collect, analyze, and apply real-world evidence as well product performance data.
+\end{itemize}
+
+\section{DTx use cases}
+As stated above, DTx is an emerging category of digital health for preventing, managing, and treating diseases through changing patient behavior and remote health monitoring. Such products, for example, can be used to encourage patients to adhere to a certain exercise routine, diet, or drug regimens. And unlike common wellness tracking applications that often target various conditions, digital therapeutics mostly focus on one condition.\\
+
+As a rule, patients make use of digital therapeutics through different software applications that can:
+
+\begin{itemize}
+\item provide some essential guidance, e.g., first aid techniques or instructions on how to cope with insomnia;
+\item augment conventional medication intakes assigned by physicians, e.g., asthma treatment;
+\item promote behavioral change through cognitive and motivational stimulation, e.g., cognitive behavioral therapy for patients with mental disorders;
+\item collect and analyze patient data so clinicians can personalize treatment regimens; and
+\item connect with different wearable and non-wearable medical devices to track and record vitals; e.g., tracking blood sugar levels.
+\end{itemize}
+
+\section{ Real-life examples of digital therapeutics}
+\subsection{Pear Therapeutics}
+The first digital therapy to receive FDA approval was reSET – an opioid addiction therapy program developed by Pear Therapeutics, a startup partnering with Sandoz. reSET is a Prescription Digital Therapeutic app that applies cognitive behavioral therapy to help patients cope with addiction.
+\subsection{Proteus Digital Health}
+The company has developed Proteus Discovery, a new system that measures the effectiveness of drug treatments, helps clinicians improve clinical outcomes and patients meet healthcare goals. It includes a vendor portal, a mobile app, and edible and wearable sensors.
+\subsection{Voluntis}
+The company built companion software for the healthcare sector, particularly for cancer, diabetes, and blood problems. As a result, Voluntis was the first digital therapy company to be listed on the stock exchange.
+\subsection{Propeller Health}
+The company’s digital platform has expanded patient adherence to treatment by up to 58\%, reducing the use of emergency inhalers to 78\% and reducing visits and hospitalizations for asthma and COPD to 57\% and 35\%, respectively.
+ 
+
+\section{Major challenges that digital therapeutics face}
+Implementing and commercializing DTx solutions involves a set of complex tasks that concern not only numerous decision-making processes but also the participation of stakeholders from different fields. Companies need to be aware of four major challenges that often accompany the adoption of the digital health ecosystem in general and digital therapeutics in particular.\\
+
+\textbf{Regulatory approval}. A major DTx hurdle is how intensely government bodies such as the US Food and Drug Administration (FDA) scrutinize them. Digital therapeutics are quite diverse. Accordingly, there is no universal framework for control structures to evaluate and approve these products. So far, digital therapeutic products fall under two larger categories.\\
+
+\begin{itemize}
+\item Software as a Medical Device (SaMD) is software covering one or more medical purposes and performing those purposes without being a part of a hardware medical device.
+\item A Mobile Medical Application (MMA) is a mobile-tailored software that is an extension of or accessory to medical devices or one that turns a smartphone/tablet into a medical device for diagnosing, treating, or monitoring diseases.
+\item To modernize the regulatory oversight of software-based medical devices, the FDA launched a new regulatory pathway — the Software Precertification (Pre-Cert) Pilot Program — in 2017. Currently, nine companies out of 100 applicants participate in the program.
+\end{itemize}
+
+\textbf{Clinical validation}. Another challenging part in regard to implementing DTx is the need to go through clinical evaluation, meaning products provide a valid, reliable clinical outcome for a target clinical condition. Treatment effectiveness can be verified by comparing clinical results to no treatment, to a minimum standard of care, or the “gold standard” of treatment.\\
+
+\textbf{Physician and care provider adoption}. To encourage mass adoption of the digital therapeutics, physicians and care providers must be introduced to them. They need to be aware of the available solutions and their outcomes they can make available to their patients. To do this, some DTx companies use the pharmaceutical model, in which distribution partnerships are leveraged to inform physicians of solutions.\\
+
+\textbf{Unawareness of DTx opportunities and options}. The digital therapeutics sphere is not a mature one and so not well known to the market. Even with ever growing interest, many consumers are unaware of what types of DTx treatment exist. This is one more roadblock on the way to embracing DTx solutions on a larger scale.\\
+
+\textbf{Data privacy}. Digital therapeutics are driven by large amounts of highly personalized patient data. Providers need to build solid frameworks to ensure data privacy and security so that DTx products can reach a wider market.\\
+
+\section{Conclusion}
+Everything moves fast when it comes to innovation. And we would like to see digital therapy become the standard of treatment, like prescribing drugs or treatment procedures. Most DTx technology solutions are mature enough to be made more affordable, functional, and patient-centered. AI, NLP, and ML have also reached the critical milestones needed to create large-scale digital therapy solutions.\\
+
+While the term Digital Therapeutic may still be unfamiliar to many, these therapies are here to stay. Digital Therapeutics (DTx) are becoming a new category of medicine, poised to address chronic and other hard to treat conditions. While much work remains for digital therapies to be integrated into and across the traditional healthcare ecosystem, Digital Therapeutics will “increasingly influence the way healthcare is delivered and consumed across the world”.\\
+
+So, all of this may well become a reality. Digital therapy has already proven its effectiveness in changing the behavior and lifestyle of patients suffering from chronic diseases and conditions. Soon, digital therapeutics will help transform the way patients are treated and encourage people to be more caring for their health.
+
+\setion{References}
+https://dtxalliance.org/understanding-dtx/
+
+https://star.global/posts/digital-therapeutics-solutions/
+
+https://medium.com/digital-medicine-society-dime/digital-health-digital-medicine-digital-therapeutics-dtx-whats-the-difference-92344420c4d5
+
+https://medium.com/digital-medicine-society-dime/digital-health-digital-medicine-digital-therapeutics-dtx-whats-the-difference-92344420c4d5
+
+
+\end{document}
